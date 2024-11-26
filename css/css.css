@@ -1,0 +1,34 @@
+#wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10vh 20vh 20vh 20vh 20vh 10vh;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'mn mn mn mn'
+    'as mn mn mn'
+    'as mn mn mn'
+    'as mn mn mn'
+    'ft ft ft ft';
+    
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    color: purple;
+    margin: 2px ;
+}
+
+main {
+    grid-area: mn;
+    background-color: orange;
+}
+
+aside {
+    grid-area: as;
+}
+
+footer{
+    grid-area: ft;
+}
