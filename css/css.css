@@ -61,30 +61,31 @@ header{
     display: flex;
     background-color: #F7E7CE;
     font-size: 1.5rem;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #main1, #main2, #main3{
     padding: 10px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #main1{
     grid-area: m1;
-    background-color: white;
+    background-color: #d8bfa7;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 #main2{
     grid-area: m2;
-    background-color: white;
+    background-color: #f4a261;
     margin-right: 20px;
 }
 
 #main3{
     grid-area: m3;
-    background-color: white;
+    background-color: #a8d5ba;
     margin-right: 20px;
 }
 
@@ -94,10 +95,12 @@ aside {
     padding: 5px;
     border-radius: 8px;
     margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer{
     grid-area: ft;
     background-color: #F7E7CE;
     padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
