@@ -67,6 +67,7 @@ header{
 }
 
 #photoslide {
+    grid-area: ph;
 
 }
 
@@ -119,5 +120,10 @@ footer{
 
 footer p{
     margin: 10px;
+}
+
+.Bg1{
+    height: fit-content;
+    width: fit-content;
 }
 
