@@ -1,0 +1,123 @@
+#wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 21.05% 25% 25% 25%;
+    grid-template-rows: 12.5vh 25vh 25vh 25vh 12.5vh; 
+    grid-template-areas: 
+    'hd hd hd hd'
+    'ph ph ph ph'
+    'ph ph ph ph'
+    'as m1 m2 m3'
+    'as m1 m2 m3'
+    'ft ft ft ft';
+    margin: 0 0px;
+}
+
+
+body{
+    background-color: #e74c3c;
+    margin: 0px;
+}
+
+#lenk{
+    color: #333;
+    font-weight: bold;
+}
+
+.flex1 {
+    margin-left: auto;  
+
+    padding: 10px;
+
+}
+
+.flex1 a{
+    margin: 8px;
+    color: gray;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.flex1 a:hover {
+    color: orange;
+}
+
+h1{
+    font-family: Abril Fatface;
+    padding-left: 50px;
+    font-size: 3rem;
+    color: #2c3e50;
+}
+
+h1 .Savvy {
+    color: #e74c3c;
+    display: inline-block;
+}
+
+header{
+    grid-area: hd;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    background-color: #F7E7CE;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#photoslide {
+
+}
+
+#main1, #main2, #main3{
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#main1{
+    grid-area: m1;
+    background-color: #d8bfa7;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#main2{
+    grid-area: m2;
+    background-color: #f4a261;
+    margin-right: 20px;
+}
+
+#main3{
+    grid-area: m3;
+    background-color: #a8d5ba;
+    margin-right: 20px;
+}
+
+aside {
+    grid-area: as;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    grid-area: ft;
+    font-size: 1.1rem;
+    background-color: #F7E7CE;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+footer p{
+    margin: 10px;
+}
+
