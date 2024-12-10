@@ -2,7 +2,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 21.05% 25% 25% 25%;
-    grid-template-rows: 12.5vh 25vh 25vh 25vh 12.5vh; 
+    grid-template-rows: 12.5vh 50vh 25vh 25vh 25vh 12.5vh; 
     grid-template-areas: 
     'hd hd hd hd'
     'ph ph ph ph'
@@ -52,13 +52,14 @@ h1{
 
 h1 .Savvy {
     color: #e74c3c;
-    display: inline-block;
 }
 
 header{
     grid-area: hd;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
     padding: 20px;
     display: flex;
     background-color: #F7E7CE;
@@ -68,7 +69,8 @@ header{
 
 #photoslide {
     grid-area: ph;
-
+    background-image: url(../img/.jpg);
+    background-size: cover;
 }
 
 #main1, #main2, #main3{
@@ -123,7 +125,6 @@ footer p{
 }
 
 .Bg1{
-    height: fit-content;
-    width: fit-content;
+    
 }
 
