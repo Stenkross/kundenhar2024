@@ -49,6 +49,10 @@ h1{
     color: #2c3e50;
 }
 
+p{
+    font-family: roboto;
+}
+
 h1 .Savvy {
     color: #e74c3c;
 }
@@ -77,13 +81,14 @@ main{
 }
 
 #per1, #per2, #per3, #per4, #per4, #per5, #per6{
-    background-color: white;
-    margin: 20px;
+    background-color: whitesmoke;
     width: 25%;
     height: 45%;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
+
 
 footer{
     grid-area: ft;
@@ -106,4 +111,6 @@ footer p{
     width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    border: 1px solid #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
