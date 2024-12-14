@@ -39,6 +39,7 @@ body{
 
 .flex1 a:hover {
     color: orange;
+    text-decoration: underline;
 }
 
 
