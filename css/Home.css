@@ -1,14 +1,13 @@
 #wrapper {
     display: grid;
-    gap: 20px;
-    grid-template-columns: 21.05% 25% 25% 25%;
-    grid-template-rows: 12.5vh 50vh 25vh 25vh 25vh 12.5vh; 
+    grid-template-columns: 22.5% 27.5% 27.5% 22.5%;
+    grid-template-rows: 12.5vh 69vh 70vh 10vh 70vh 12.5vh; 
     grid-template-areas: 
     'hd hd hd hd'
     'ph ph ph ph'
-    'ph ph ph ph'
-    'as m1 m2 m3'
-    'as m1 m2 m3'
+    '.. m1 m1 ..'
+    '.. .. .. ..'
+    'm2 m2 as as'
     'ft ft ft ft';
     margin: 0 0px;
 }
@@ -25,9 +24,7 @@ body{
 
 .flex1 {
     margin-left: auto;  
-
     padding: 10px;
-
 }
 
 .flex1 a{
@@ -54,12 +51,19 @@ h1 .Savvy {
     color: #e74c3c;
 }
 
+p{
+    font-family: roboto;
+}
+
+
 header{
     grid-area: hd;
     justify-content: center;
     align-items: center;
     position: sticky;
+    z-index: 2;
     top: 0;
+    gap: 20px;
     padding: 20px;
     display: flex;
     background-color: #F7E7CE;
@@ -67,52 +71,55 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#photoslide {
-    grid-area: ph;
-    background-image: url(../img/.jpg);
-    background-size: cover;
-    gap: 0;
-}
-
-#main1, #main2, #main3{
+#main1, #main2 {
     padding: 10px;
+    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #main1{
     grid-area: m1;
-    background-color: #d8bfa7;
+    color: white;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: -40px;
 }
+
+
+#main1 p{
+   font-size: 1.3rem;
+}
+
+#main1 h2{
+    font-size: 2.5rem;
+    text-decoration: underline;
+ }
 
 #main2{
     grid-area: m2;
-    background-color: #f4a261;
     margin-right: 20px;
-}
-
-#main3{
-    grid-area: m3;
-    background-color: #a8d5ba;
-    margin-right: 20px;
-}
-
-aside {
-    grid-area: as;
-    background-color: whitesmoke;
-    padding: 5px;
-    border-radius: 8px;
+    color: white;
     margin-left: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#main2 p{
+    font-size: 1.2rem;
+}
+ 
+#main2 h2{
+     font-size: 2rem;
+     text-decoration: underline;
+}
+
+aside{
+    grid-area: as;
+    overflow: hidden;
 }
 
 footer{
     grid-area: ft;
     font-size: 1.1rem;
     background-color: #F7E7CE;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -123,4 +130,30 @@ footer{
 
 footer p{
     margin: 10px;
+}
+
+.parabel {
+    grid-area: ph;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.parabel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.parabel-form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.bild1{
+    height: 100%;
+    border-top-left-radius: 150px;
 }
