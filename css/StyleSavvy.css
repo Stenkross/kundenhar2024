@@ -1,5 +1,5 @@
 body{
-    background-color: #e74c3c;
+    background-color: #c12727;
     margin: 0px;
 }
 
@@ -228,7 +228,7 @@ aside{
 .img1, .img2, .img3, .img4, .img5, .img6{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-style: solid;
-    border-color: #F7E7CE;
+    border-color: #e74c3c;
     border-radius: 10px;
     border-width: 3px;
 }
