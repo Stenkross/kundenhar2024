@@ -87,7 +87,7 @@ footer p{
 #wrapper1 {
     display: grid;
     grid-template-columns: 22.5% 27.5% 27.5% 22.5%;
-    grid-template-rows: 12.5vh 69vh 70vh 10vh 70vh 12.5vh; 
+    grid-template-rows: 12.5vh 69vh 70vh 3vh 70vh 12.5vh; 
     grid-template-areas: 
     'hd hd hd hd'
     'ph ph ph ph'
@@ -303,7 +303,7 @@ aside{
     padding: 10px;
 }
 
-#imgper{
+.imgper{
     width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
